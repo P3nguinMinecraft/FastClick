@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "fastclick",
+	"version": "${version}",
+	"name": "Fast Click",
+	"description": "Removes the 4 tick cooldown for mouse buttons",
+	"authors": [
+        "P3nguinMinecraft"
+		],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fastclick/icon.png",
+	"environment": "*",
+	"entrypoints": {
+        "main": [
+
+        ],
+		"client": [
+            "io.github.penguin.fastclick.FastClick"
+		]
+	},
+	"mixins": [
+		"fastclick.mixins.json"
+	],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "minecraft": ">=${minecraft_version}",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+	"suggests": {
+		"another-mod": "*"
+	},
+	"accessWidener" : "fastclick.accesswidener"
+}
