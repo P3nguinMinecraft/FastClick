@@ -1,5 +1,5 @@
 # FastClick
-Removes the 4 tick cooldown for mouse buttons
+Changes mouse buttons to reflect the behavior of keyboard buttons, removing the 4 tick delay
 
 Get this mod on [Modrinth](https://modrinth.com/mod/fast-click)!
 
