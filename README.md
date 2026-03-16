@@ -1,8 +1,7 @@
 # FastClick
 Changes mouse buttons to reflect the behavior of keyboard buttons, removing the 4 tick delay
 
-<a href="https://modrinth.com/mod/fast-click">
-        <img alt="modrinth" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_vector.svg">
+<a href="https://modrinth.com/mod/fast-click"><img alt="modrinth" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_vector.svg"></a>
 
 ## Usage
 Press the keybind or use the command `/fastclick` to toggle the mod
