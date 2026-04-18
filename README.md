@@ -31,6 +31,7 @@ Requires [Fabric API](https://modrinth.com/mod/fabric-api)
 |Minecraft|FastClick|
 |-|-|
 |1.21.11|[1.1.0+1.21.11](https://cdn.modrinth.com/data/WdZ3mQ0l/versions/3JY9OyyB/fastclick-1.1.0%2B1.21.11.jar)|
+|26.1-26.1.2+|[1.1.0+26.1](https://cdn.modrinth.com/data/WdZ3mQ0l/versions/EgpASb7F/fastclick-1.1.0%2B26.1.jar)|
 
 ## Credits
 P3nguinMinecraft

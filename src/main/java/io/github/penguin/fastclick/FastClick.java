@@ -1,13 +1,12 @@
 package io.github.penguin.fastclick;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.*;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.network.chat.Component;
@@ -16,7 +15,8 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.literal;
+import static net.fabricmc.fabric.api.client.command.v2.ClientCommands.argument;
+import static net.fabricmc.fabric.api.client.command.v2.ClientCommands.literal;
 
 public class FastClick implements ClientModInitializer {
 	public static Logger LOGGER = LoggerFactory.getLogger("FastClick");
@@ -63,7 +63,7 @@ public class FastClick implements ClientModInitializer {
                 );
         });
 
-        toggleKey = KeyBindingHelper.registerKeyBinding(new KeyMapping("key.fastclick.toggle", InputConstants.Type.KEYSYM, InputConstants.UNKNOWN.getValue(), CATEGORY));
+        toggleKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.fastclick.toggle", InputConstants.Type.KEYSYM, InputConstants.UNKNOWN.getValue(), CATEGORY));
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (toggleKey.consumeClick()) {
                 toggle();
