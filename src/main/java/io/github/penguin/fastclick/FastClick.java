@@ -73,6 +73,7 @@ public class FastClick implements ClientModInitializer {
 
     public static void toggle() {
         Config.enabled = !Config.enabled;
+        Config.save();
         ChatUtils.setOverlayMessage(Component.literal("FastClick " + (Config.enabled ? "enabled" : "disabled")).setStyle(Style.EMPTY
                 .withColor(Config.enabled ? ChatFormatting.GREEN : ChatFormatting.DARK_RED))
         );
