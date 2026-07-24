@@ -15,6 +15,6 @@ public class ChatUtils {
 
     public static void setOverlayMessage(Component component) {
         Minecraft client = Minecraft.getInstance();
-        client.execute(() -> client.gui.setOverlayMessage(component, true));
+        client.execute(() -> client.gui.hud.setOverlayMessage(component, true));
     }
 }
